@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h3>circle page</h3>
+<svg width="300" height="250" style="border: 1px solid #ff0000;">
+    <circle fill="blue" cx="150" cy="110" r="100" stroke="black" stroke-width="10"/>
+</svg>
+<h3>line page</h3>
+<svg style="width:200px;height:auto;border: 2px solid #c0c0c0;">
+    <line x1="20" y1="50" x2="180" y2="50" stroke="red" stroke-width="3"></line>
+    <line x1="30" y1="70" x2="380" y2="50" stroke="black" stroke-width="2"></line>
+</svg>
+
+
+<h3>line column</h3>
+<div style="overflow-x: auto;">
+    <svg style="width: 600px;height: 300px;border: 2px solid black">
+        <line x1="0" y1="15" x2="500" y2="15" stroke="green" stroke-width="20"/>
+        <line x1="0" y1="55" x2="500" y2="55" stroke="green" stroke-width="20" stroke-dasharray="50 10"/>
+        <line x1="0" y1="55" x2="500" y2="55" stroke="green" stroke-width="20" stroke-dasharray="50 10"/>
+        <line x1="0" y1="105" x2="500" y2="105" stroke="green" stroke-width="20" stroke-dasharray="50 10 100 5"/>
+        <line x1="0" y1="155" x2="500" y2="155" stroke="black" stroke-width="20" stroke-dasharray="50 10" stroke-dashoffset="120"/>
+        <line x1="0" y1="205" x2="500" y2="205" stroke="black" stroke-width="40" stroke-dasharray="50 10" stroke-dashoffset="30"/>
+        <line x1="0" y1="205" x2="500" y2="205" stroke="black" stroke-width="60" stroke-dasharray="50 10" stroke-dashoffset="-30"/>
+
+    </svg>
+</div>
+<h3>animation</h3>
+<svg style="width: 600px;height:50px; border:2px solid red">
+    <line x1="0" y1="30" x2="500" y2="30" stroke="silver" stroke-width="8" id="lines" />
+</svg>
+<h3>circle</h3>
+<svg height="200" width="200" style="border:2px solid #ff1493;">
+    <circle cx="100" cy="100" r="50" stroke="black" stroke-width="10" fill="blue"></circle>
+</svg>
+<svg height="200" width="200" style="border:2px solid #ff1493;">
+    <circle cx="100" cy="100" r="50" stroke="black" stroke-width="10" fill="blue" stroke-dasharray="100 5"></circle>
+</svg>
+<svg height="200" width="200" style="border:2px solid #ff1493;">
+    <circle cx="100" cy="100" r="50" stroke="black" stroke-width="10" fill="blue" stroke-dasharray="50 5"></circle>
+</svg>
+<svg height="200" width="200" style="border:2px solid #ff1493;">
+    <circle cx="100" cy="100" r="50" stroke="black" stroke-width="10" fill="blue" stroke-dasharray="10 5"></circle>
+</svg>
+<svg height="200" width="200" style="border:2px solid #ff1493;">
+    <circle cx="100" cy="100" r="50" stroke="black" stroke-width="10" fill="blue" stroke-dasharray="10 5 40"></circle>
+</svg>
+<h3>animation circle</h3>
+<svg style="width: 250px;height: 250px;border:1px solid silver;" id="container">
+    <circle cx="100" cy="100" r="50" stroke="silver" stroke-width="20" fill="none" id="silver"></circle>
+    <circle cx="100" cy="100" r="50" stroke="green" stroke-width="20" fill="none" id="green"></circle>
+</svg>
+<h3>rectangle shapes</h3>
+<svg>
+    <rect width="200" height="200" x="2" y="3" style="fill: tomato;stroke-width:8;stroke: aqua;"/>
+    <rect width="200" height="140" x="212" y="5" rx="20" ry="20" style="fill: tomato;  stroke-width:8;stroke: aqua;"/>
+</svg>
+<h3>ellipse</h3>
+<svg height="250" width="250" style="border: 2px solid cornflowerblue;">
+    <ellipse rx="100" ry="50" cx="120" cy="120" fill="pink" stroke="#87CEFA	" stroke-width="5"></ellipse>
+</svg>
+<h3>ellipse animation</h3>
+<svg height="400" width="400" style="border:1px solid silver">
+    <ellipse rx="130" ry="64" cx="120" cy="120" fill="pink" stroke-dasharray="1 483" stroke-linecap="round" stroke="#1E90FF" stroke-width="20" id="ellipse"></ellipse>
+</svg>
+<h3>tex svg</h3>
+<svg height="500" width="100%" style="border: 2px solid rebeccapurple;">
+    <text x="0" y="20" fill="red">Test: stage star</text>
+    <text x="30" y="60" fill="red">Test: stage two</text>
+    <text x="0" y="100" fill="#FFFF00" dx="100" dy="-10">Test: stage three</text>
+    <text x="0" y="150" transform="rotate(10)" style="font: italic 60px serif; fill: red;"> Text Two :Stage Zero</text>
+</svg>
+<h3> polygon</h3>
+<svg width="600" height="600" style="border:1px solid #00008b;">
+    <polygon points="30,100 200,600 600,10" style="fill:goldenrod;stroke: black; stroke-width: 2"></polygon>
+</svg>
+<h3>start</h3>
+<svg viewBox="0 0 400 800"  xmlns="http://www.w3.org/2000/svg">
+  <polygon stroke="blue" points="200,0 20 300,380 100,0 100,350 300"></polygon>
+    <polygon fill-rule="evenodd" stroke="red"
+             points="200,440 20 700,380 500,0 500,350 700"/>
+</svg>
+<h3>pollyLine</h3>
+<svg width="400" height="400" style="border:2px solid black;">
+    <polyline points="20,10 20,100 120,300 200,300 300,350 390,10" fill="none" stroke="#2F4F4F" stroke-width="6"></polyline>
+</svg>
+<svg width="400" height="400" style="border: 2px solid black;">
+    <polyline points="5,5 20,50 2,380 70,280 200,280 400,2 " fill="silver" stroke="black" stroke-width="3"></polyline>
+</svg>
+<h3>pollyline animation</h3>
+<svg width="400" height="400" style="border: 2px solid black;">
+    <polyline points="5,5 20,50 2,380 70,280 200,280 400,2" fill="none" stroke="black" stroke-width="9"></polyline>
+    <polyline id="examplesPollyline" points="5,5 20,50 2,380 70,280 200,280 400,2" fill="none" stroke="white" stroke-width="4"></polyline>
+</svg>
+<h3>loading anamation</h3>
+<div class="loading">
+    <svg  width="200" height="200"></svg>
+    <circle cx="100" cy="100" r="20"></circle>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

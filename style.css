@@ -1,0 +1,48 @@
+
+#lines{
+    stroke-dasharray:500;
+    stroke-dashoffset: 500;
+    animation:startLine 2s ease alternate infinite;
+}
+@keyframes startLine {
+    to{
+        stroke-dashoffset: 100;
+    }
+}
+#container{
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+#green{
+    stroke-dasharray: 628.318530718;/* 2 X PI x r */
+    stroke-dashoffset: 471.238898038;
+    transition: all 2s;
+}
+#container:hover #green{
+    stroke-dashoffset: 100;
+}
+#ellipse{
+    animation: startEllipse 2s linear infinite;
+}
+@keyframes startEllipse {
+    to{
+        stroke-dashoffset: 483;
+    }
+
+}
+#examplesPollyline{
+    stroke-dasharray: 900;
+    stroke-dashoffset: 1000;
+    animation: StartPollyline 2s linear infinite alternate;
+}
+@keyframes  StartPollyline{
+    to{
+        stroke-dashoffset: 20;
+    }
+}
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
